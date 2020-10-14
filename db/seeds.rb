@@ -1,10 +1,8 @@
 require_relative '../config/environment'
 require 'pry'
 
-User.destroy_all
 Recipe.destroy_all
 
-User.create(name: 'Victor')
-puts 'user created'
-
+Recipe.create(dice: "Don't stir.")
 binding.pry
+puts "recipe created"
